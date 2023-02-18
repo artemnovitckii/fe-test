@@ -1,0 +1,35 @@
+@use "../../styles/variables";
+@import "../../styles/common.scss";
+
+.blog-image {
+  @extend .column;
+  align-items: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-radius: variables.$border-radius;
+  max-width: variables.$container-max-width;
+}
+
+.image {
+  width: 100%;
+  max-height: 18.75rem;
+  border-radius: variables.$border-radius;
+  margin-bottom: 0.75rem;
+  padding: 0;
+}
+
+.title {
+  @extend .fontStyle;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.description {
+  @extend .fontStyle;
+  margin-bottom: 0.75rem;
+}
+
+.link {
+  @extend .textLink;
+}

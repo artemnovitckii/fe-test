@@ -1,0 +1,100 @@
+@use "../../styles/_variables";
+@import "../../styles/common.scss";
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  background-color: variables.$off-white;
+  justify-content: center;
+  box-shadow: inset 0px 1px 0px #d2dce8;
+
+  .content-container {
+    @extend .row;
+    justify-content: space-between;
+    padding-top: 5.625rem;
+    padding-bottom: 5.625rem;
+    max-width: variables.$max-width;
+
+    @media (max-width: variables.$mobile-width) {
+      padding-top: variables.$section-margin;
+      padding-bottom: variables.$section-margin;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    .social-media {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: variables.$mobile-width) {
+        align-items: center;
+        text-align: center;
+      }
+
+      a {
+        display: flex;
+        margin-right: 0.875rem;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      &__icons {
+        display: flex;
+        margin-bottom: variables.$element-margin;
+      }
+
+      &__description {
+        @extend .fontStyle;
+        margin: 0;
+        display: flex;
+        max-width: variables.$container-max-width;
+      }
+    }
+
+    .information-container {
+      display: flex;
+      flex-direction: column;
+      max-width: variables.$element-max-width;
+      @media (max-width: variables.$mobile-width) {
+        margin-bottom: variables.$element-margin;
+      }
+
+      .address-details {
+        margin-bottom: variables.$element-margin;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+
+        &__heading {
+          font-weight: 700;
+        }
+      }
+      .contact-details {
+        display: flex;
+        flex-direction: column;
+        overflow-wrap: break-word;
+      }
+
+      p {
+        @extend .fontStyle;
+        margin: 0;
+        display: flex;
+        max-width: variables.$container-max-width;
+        @media (max-width: variables.$mobile-width) {
+          justify-content: center;
+        }
+      }
+
+      a {
+        @extend .textLink;
+        @media (max-width: variables.$mobile-width) {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

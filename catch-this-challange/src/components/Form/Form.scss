@@ -1,0 +1,84 @@
+@use "../../styles/_variables";
+@import "../../styles/common.scss";
+
+.form {
+  @extend .column;
+  max-width: variables.$max-width;
+  margin: 0 auto;
+  @extend .fontStyle;
+
+  @media (max-width: variables.$mobile-width) {
+    max-width: 100%;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: variables.$element-margin;
+    color: variables.$grey;
+    @media (max-width: variables.$mobile-width) {
+      justify-content: start;
+    }
+  }
+
+  &__group-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: variables.$element-margin;
+    @media (max-width: variables.$mobile-width) {
+      flex-direction: column;
+    }
+  }
+
+  &__group {
+    width: 100%;
+  }
+
+  &__group:not(:last-child) {
+    margin-right: variables.$element-margin;
+    @media (max-width: variables.$mobile-width) {
+      margin-bottom: variables.$element-margin;
+    }
+  }
+
+  &__input {
+    @extend .input;
+  }
+
+  &__button {
+    display: block;
+    max-width: variables.$element-max-width;
+    width: 100%;
+    padding: 1rem;
+    @extend .fontStyle;
+    font-weight: bold;
+    color: white;
+    background-color: #53b16a;
+    border: solid 1px #11822c;
+    border-radius: variables.$border-radius;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: variables.$mobile-width) {
+      max-width: none;
+    }
+
+    &:hover {
+      background-color: #129e7a;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.2);
+    }
+
+    &:active {
+      background-color: #129e7bd7;
+    }
+  }
+
+  select {
+    @extend .selectDropdown;
+  }
+}

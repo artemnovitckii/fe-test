@@ -1,0 +1,12 @@
+@use "../../styles/variables";
+
+.divider {
+  border: none;
+  margin: auto;
+  padding: 0;
+  border-top: dashed 1px;
+  width: 10.625rem;
+  margin-top: variables.$section-margin;
+  margin-bottom: variables.$section-margin;
+  justify-content: center;
+}

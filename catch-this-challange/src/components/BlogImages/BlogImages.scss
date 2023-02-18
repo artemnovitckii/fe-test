@@ -1,0 +1,21 @@
+@use "../../styles/variables";
+@import "../../styles/common.scss";
+
+.blogs {
+  @extend .row;
+
+  margin-bottom: variables.$element-margin;
+
+  @media (max-width: variables.$mobile-width) {
+    flex-direction: column;
+  }
+
+  &__single-blog:not(:last-child) {
+    margin-right: variables.$element-margin;
+
+    @media (max-width: variables.$mobile-width) {
+      margin: 0;
+      margin-bottom: variables.$element-margin;
+    }
+  }
+}

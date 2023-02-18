@@ -1,0 +1,24 @@
+@use "../../styles/_variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: 0;
+  padding-bottom: 3.75rem;
+  padding-top: 3.75rem;
+  @media (max-width: variables.$mobile-width) {
+    justify-content: start;
+    padding-bottom: 2.813rem;
+    padding-top: 2.813rem;
+  }
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -0.025rem;
+  line-height: 1.875rem;
+  justify-content: center;
+}

@@ -1,0 +1,27 @@
+@use "../../styles//variables";
+
+.image-gallery-container {
+  display: flex;
+  max-width: variables.$max-width;
+  overflow-x: auto;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 5.625rem;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: nowrap;
+
+  img {
+    flex: 0 0 auto;
+    height: auto;
+    max-width: 100%;
+    margin-right: 0.625rem;
+    border-radius: variables.$border-radius;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

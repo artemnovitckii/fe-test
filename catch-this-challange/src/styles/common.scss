@@ -1,0 +1,71 @@
+@use "./variables";
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.column {
+  @extend .row;
+  flex-direction: column;
+}
+
+.textLink {
+  margin: 0;
+  font-size: 0.875rem;
+  display: flex;
+  color: #008fff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: #0056b3;
+  }
+}
+
+.selectDropdown {
+  @extend .input;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background-position: calc(100% - 15px) center !important;
+  background: url("data:image/svg+xml,<svg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L7.24326 6L14 1' stroke='rgb(105, 123, 149)' stroke-width='2' stroke-linecap='round'/></svg>")
+    no-repeat;
+
+  &:required:invalid {
+    color: #697b95;
+  }
+}
+
+.fontStyle {
+  font-size: 0.875rem;
+  letter-spacing: 0.014rem;
+  line-height: 1.125rem;
+  color: variables.$grey;
+}
+
+.input {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  @extend .fontStyle;
+  border: 1px solid #d2dce8;
+  border-radius: variables.$border-radius;
+
+  &:focus {
+    outline: none;
+    border-color: #0077cc;
+    box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.2);
+  }
+
+  &::placeholder {
+    color: variables.$grey;
+  }
+
+  &--error {
+    border-color: #ff4136;
+  }
+}

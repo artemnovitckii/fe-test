@@ -1,3 +1,9 @@
+# How to run my soluton 😮‍💨
+
+1. Change to project folder by `cd catch-this-challange/`
+2. Install dependencies by running `npm install`
+3. After evertyhing is installed you can run `npm start` to start the server and see the website.
+
 # Front End Developer Test
 
 A simple test for front end developers
@@ -6,10 +12,10 @@ A simple test for front end developers
 
 1. Fork or clone this repo.
 2. Set up a "static" project that includes a basic build system.
-3. Using the design located here:  https://www.figma.com/file/Zd1qVlL18ozQlrEYsWX5GM/Catch-Design-Front-end-Test?node-id=0%3A1&t=dimpQI98eG4eI53V-1 develop a page using SCSS and a templating language of your choice. 
-6. Email tech-tests@catchdesign.co.nz with:
-    1. A link to your repo OR
-    2. A zip file of your project including git config/metadata
+3. Using the design located here: https://www.figma.com/file/Zd1qVlL18ozQlrEYsWX5GM/Catch-Design-Front-end-Test?node-id=0%3A1&t=dimpQI98eG4eI53V-1 develop a page using SCSS and a templating language of your choice.
+4. Email tech-tests@catchdesign.co.nz with:
+   1. A link to your repo OR
+   2. A zip file of your project including git config/metadata
 
 ### Guidelines
 
@@ -22,10 +28,10 @@ A simple test for front end developers
 
 ### Bonus Points
 
-* Use patterns like BEM, ITCSS
-* Accessibility
-* Consume dependencies with tools like Bower, NPM and RubyGems/Bundler
-* Compile any assets with a build tool like gulp, webpack etc
-* Unit and code quality tests
-* Include a dev server
-* Pay attention to the grid system
+- Use patterns like BEM, ITCSS
+- Accessibility
+- Consume dependencies with tools like Bower, NPM and RubyGems/Bundler
+- Compile any assets with a build tool like gulp, webpack etc
+- Unit and code quality tests
+- Include a dev server
+- Pay attention to the grid system

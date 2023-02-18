@@ -35,7 +35,7 @@
     no-repeat;
 
   &:required:invalid {
-    color: #697b95;
+    color: variables.$grey;
   }
 }
 
@@ -63,6 +63,15 @@
 
   &::placeholder {
     color: variables.$grey;
+  }
+
+  &::-moz-placeholder {
+    color: variables.$grey;
+    opacity: 1;
+  }
+
+  &:defined {
+    color: black;
   }
 
   &--error {

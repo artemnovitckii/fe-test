@@ -1,8 +1,9 @@
 # How to run my soluton 😮‍💨
 
-1. Change to project folder by `cd catch-this-challange/`
-2. Install dependencies by running `npm install`
-3. After evertyhing is installed you can run `npm start` to start the server and see the website.
+1. Clone this repo
+2. Change to project (code) folder by `cd catch-this-challange/`
+3. Install dependencies by running `npm install`
+4. After evertyhing is installed you can run `npm start` to start the server and see the website.
 
 # Front End Developer Test
 
